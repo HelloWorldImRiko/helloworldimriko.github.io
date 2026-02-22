@@ -1,0 +1,137 @@
+/* ===============================
+   LORE PAGE ONLY
+================================ */
+
+body.lore-page {
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(179, 32, 46, 0.08),
+      transparent 60%
+    ),
+    var(--bg);
+}
+
+.lore {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem 4rem;
+}
+
+.lore-container {
+  background: rgba(20, 20, 27, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 3rem 3rem 3.5rem;
+}
+
+.lore-title {
+  font-family: var(--font-title);
+  letter-spacing: 0.18em;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.lore-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.lore-actions {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.lore-warning {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+/* ===============================
+   VN MODAL (PLAYABLE EMBED)
+================================ */
+
+.vn-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 15, 0.97);
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vn-modal.hidden {
+  display: none;
+}
+
+.vn-modal-inner {
+  position: relative;
+
+  width: 90vw;
+  max-width: 1280px;
+
+  aspect-ratio: 16 / 9;
+  background: #000;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.8);
+}
+
+.vn-modal-inner iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Close button */
+.vn-close {
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.vn-close:hover {
+  color: var(--red);
+}
+
+/* ===============================
+   MOBILE TWEAKS
+================================ */
+
+@media (max-width: 768px) {
+  .vn-modal-inner {
+    width: 95vw;
+    aspect-ratio: auto;
+    height: 70vh;
+  }
+}
+
+/* ===============================
+   MOBILE
+================================ */
+@media (max-width: 768px) {
+
+  .lore {
+    padding: 3.5rem 1rem;
+  }
+
+  .lore-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .lore-title {
+    font-size: 2.2rem;
+  }
+}

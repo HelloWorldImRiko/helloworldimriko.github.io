@@ -1,0 +1,81 @@
+/* ===============================
+   OFFERINGS PAGE
+================================ */
+
+.offerings {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 5rem;
+}
+
+/* ===============================
+   HEADER
+================================ */
+
+.offerings-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.offerings-header h1 {
+  font-family: var(--font-title);
+  letter-spacing: 0.18em;
+  margin-bottom: 0.75rem;
+}
+
+/* ===============================
+   OFFERINGS LIST
+================================ */
+
+.offerings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Individual offering */
+.offering {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+
+  padding: 1.5rem 1.75rem;
+
+  background: rgba(20, 20, 27, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+/* Emphasis (Ko-fi) */
+.offering.emphasis {
+  border-color: rgba(179, 32, 46, 0.6);
+}
+
+/* Hover */
+.offering:hover {
+  background: rgba(179, 32, 46, 0.08);
+}
+
+/* Text */
+.offering-name {
+  font-family: var(--font-title);
+  letter-spacing: 0.12em;
+}
+
+.offering-desc {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+/* ===============================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+  .offering {
+    text-align: center;
+  }
+
+}

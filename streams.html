@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Streams — Riko</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/streams.css">
+</head>
+
+<body class="streams-page">
+
+<header class="site-header">
+  <nav class="main-nav">
+    <a href="index.html" class="logo">HelloWorldImRiko</a>
+<button
+  class="menu-toggle"
+  id="menuToggle"
+  aria-label="Open navigation menu"
+  aria-haspopup="true"
+  aria-expanded="false">
+  ☰
+</button>
+
+    <ul class="nav-links">
+      <li><a href="lore.html">The Contract</a></li>
+      <li><a href="characters.html">The Reaper</a></li>
+      <li><a href="streams.html" aria-current="page">Streams</a></li>
+      <li><a href="links.html">Offerings</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="streams">
+
+  <header class="streams-header">
+    <h1>Stream Schedule</h1>
+    <p class="whisper">
+      Attendance is noted.
+    </p>
+  </header>
+
+  <section class="schedule">
+
+    <div class="schedule-row">
+      <span class="day">Monday</span>
+      <span class="time">7:00 PM</span>
+      <span class="zone">CST</span>
+    </div>
+
+    <div class="schedule-row">
+      <span class="day">Wednesday</span>
+      <span class="time">7:00 PM</span>
+      <span class="zone">CST</span>
+    </div>
+
+    <div class="schedule-row">
+      <span class="day">Thursday</span>
+      <span class="time">7:00 PM</span>
+      <span class="zone">CST</span>
+    </div>
+
+    <div class="schedule-row">
+      <span class="day">Saturday</span>
+      <span class="time">10:00 AM</span>
+      <span class="zone">CST</span>
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p class="whisper">
+    Absence is remembered.
+  </p>
+</footer>
+
+<!-- MOBILE MENU -->
+<div
+  class="mobile-menu hidden"
+  id="mobileMenu"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Site navigation">
+  <button class="menu-close" id="menuClose" aria-label="Close menu">
+    ✕
+  </button>
+
+  <nav class="mobile-nav">
+    <a href="index.html">Domain</a>
+    <a href="lore.html">The Contract</a>
+    <a href="characters.html">The Reaper</a>
+    <a href="streams.html">Streams</a>
+    <a href="links.html">Offerings</a>
+  </nav>
+
+  <p class="whisper">
+    Navigation is permitted.
+  </p>
+</div>
+
+<script src="assets/js/nav.js"></script>
+</body>
+</html>
