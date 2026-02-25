@@ -1,0 +1,124 @@
+/* ===============================
+   HELL STREAM PAGE
+================================ */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url("../images/hellStream2.png") center / cover no-repeat fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--text);
+}
+
+/* ===============================
+   CONTAINER
+================================ */
+
+.hellstream {
+  text-align: center;
+  padding: 2rem;
+  max-width: 420px;
+  width: 100%;
+}
+
+/* ===============================
+   TITLE
+================================ */
+
+.hell-title {
+  font-family: var(--font-title);
+  font-size: 2.2rem;
+  letter-spacing: 0.25em;
+  margin-bottom: 3rem;
+  color: #cfcfcf;
+
+  text-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+/* ===============================
+   FORM
+================================ */
+
+.hell-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+/* ===============================
+   INPUT
+================================ */
+
+.hell-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #f2f2f2;
+
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0.08em;
+
+  outline: none;
+}
+
+.hell-input::placeholder {
+  color: rgba(255,255,255,0.45);
+}
+
+.hell-input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ===============================
+   BUTTON
+================================ */
+
+.hell-button {
+  padding: 0.6rem 1.5rem;
+  background: transparent;
+  border: 1px solid var(--red);
+  color: var(--red);
+
+  font-family: var(--font-title);
+  letter-spacing: 0.18em;
+  cursor: pointer;
+}
+
+.hell-button:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+/* ===============================
+   RESPONSE
+================================ */
+
+.hell-response {
+  margin-top: 2.5rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ===============================
+   MOBILE TUNING
+================================ */
+
+@media (max-width: 480px) {
+  .hell-title {
+    font-size: 1.8rem;
+  }
+}
