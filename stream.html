@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hell Stream</title>
+
+  <!-- Base styles if you want shared vars -->
+  <link rel="stylesheet" href="assets/css/base.css" />
+
+  <!-- Hell Stream specific styles -->
+  <link rel="stylesheet" href="assets/css/hellstream.css" />
+</head>
+<body>
+
+  <main class="hellstream">
+    <h1 class="hell-title">HELL STREAM</h1>
+
+    <form id="hellForm" class="hell-form" autocomplete="off">
+      <input
+        type="text"
+        id="hellName"
+        class="hell-input"
+        placeholder="Enter your name"
+        required
+      />
+
+      <button type="submit" id="hellSubmit" class="hell-button">
+        Enter
+      </button>
+    </form>
+
+    <p id="hellResponse" class="hell-response hidden whisper"></p>
+  </main>
+
+  <script src="assets/js/hellstream.js"></script>
+</body>
+</html>
